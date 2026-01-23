@@ -111,7 +111,7 @@
     object-fit: contain;
 }
 
-.docwire__usecases-single_wrapper_img img :hover {
+.docwire__usecases-single_wrapper_img img:hover {
     transform: none;
     animation: none;
 
