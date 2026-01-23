@@ -26,7 +26,7 @@ function ShowcaseTemplate({ linkName }) {
                             <div>Website</div>
                             <HiExternalLink className="icon"/>
                         </a>
-                        <Link to="/ContactUs" className="cta">Get licence</Link>
+                        <Link to="/contact-us" className="cta">Get licence</Link>
                     </div>
                 </div>
                 <div className="docwire__showcase-template_content">

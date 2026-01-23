@@ -14,7 +14,7 @@ function CTAcontact() {
                     </div>
                 </div>
                 <div className="docwire__cta-button">
-                    <Link to="/ContactUs">Get licence</Link>
+                    <Link to="/contact-us">Get licence</Link>
                 </div>
             </div>
         </div>
