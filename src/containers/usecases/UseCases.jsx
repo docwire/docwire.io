@@ -19,17 +19,17 @@ function UseCases() {
                 </div>
                 <div className='docwire__usecases-hero_bottom'>
                     {
-                        data.map(data =>
-                            <div className="docwire__usecases-single">
-                                <Link to={`/showcases/${data.linkName}`}>
+                        data.map((item) =>
+                            <div className="docwire__usecases-single" key={item.linkName}>
+                                <Link to={`/showcases/${item.linkName}`}>
                                     <div className="docwire__usecases-single_wrapper">
                                         <div className="docwire__usecases-single_wrapper_img">
-                                            <img src={require(`../../assets/${data.image}`)} alt={data.companyName}/>
+                                            <img src={require(`../../assets/${item.image}`)} alt={item.companyName}/>
                                         </div>
                                     </div>
-                                    <h2>{data.companyName}</h2>
+                                    <h2>{item.companyName}</h2>
                                 </Link>
-                                <p>{data.showcasesShortInfo}</p>
+                                <p>{item.showcasesShortInfo}</p>
                             </div>
                         )
                     }
