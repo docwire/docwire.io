@@ -85,7 +85,7 @@
 }
 
 .docwire__info-intro_section2-gradient > img {
-    scale: 75%;
+    transform: scale(0.75);
 }
 
 .docwire__info-intro_section2-gradient.animated {
