@@ -2,7 +2,7 @@ import './showcaseTemplate.css'
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import {Redirect, useParams} from "react-router-dom";
+import {Redirect, useParams} from "@docusaurus/router";
 import {HiExternalLink, HiArrowRight} from "react-icons/hi";
 import {CTAcontact} from "../index";
 import {data} from "../../data/showcaseData";
