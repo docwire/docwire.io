@@ -21,8 +21,13 @@ function ShowcaseTemplate(props) {
     }
 
     // Resolve the image from the context. Handles both ES Module and CommonJS exports.
-    const imageModule = assets(`./${showcase.image}`);
-    const imageSrc = imageModule.default || imageModule;
+    let imageSrc = null;
+    try {
+        const imageModule = assets(`./${showcase.image}`);
+        imageSrc = imageModule.default || imageModule;
+    } catch (error) {
+        console.error(`Failed to load image: ${showcase.image}`, error);
+    }
 
     return (
         <Layout title={showcase.companyName}>
