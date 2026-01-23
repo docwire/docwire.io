@@ -1,0 +1,20 @@
+{
+  "short_name": "Docwire",
+  "name": "Docwire SDK",
+  "icons": [
+    {
+      "src": "img/FaviconLogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/FaviconLogo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#9747ff",
+  "background_color": "#040C18"
+}

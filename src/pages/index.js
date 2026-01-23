@@ -1,10 +1,36 @@
-export {default as Home} from './Home'
-export {default as ContactUs} from './ContactUs'
-export {default as Showcases} from './Showcases'
-export {default as AboutUs} from './AboutUs'
-export {default as Blog} from './Blog'
-export {default as NoPage} from './NoPage'
-export {default as NoBlogPage} from './NoPage'
-export {default as TermsOfService} from './TermsOfService'
-export {default as Privacy} from './Privacy'
+import React from 'react';
+import Layout from '@theme/Layout';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
+// Ensure you have moved your 'containers' folder to 'src/containers'
+// or update this path to where your components are located.
+import {
+    WingsSection,
+    UnlockThePower,
+    HomeHaveYouEver,
+    CTA,
+    HomeHeader,
+    Slider,
+    InfoSection
+} from "../containers";
+
+export default function Home() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <Layout
+      title={`Home`}
+      description="Award-winning modern data processing in C++20">
+      <main>
+        {/* Nav is handled by Docusaurus Layout */}
+        <HomeHeader/>
+        <Slider/>
+        <HomeHaveYouEver/>
+        <UnlockThePower/>
+        <WingsSection/>
+        <CTA/>
+        <InfoSection/>
+        {/* Footer is handled by Docusaurus Layout */}
+      </main>
+    </Layout>
+  );
+}

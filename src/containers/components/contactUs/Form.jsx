@@ -1,6 +1,6 @@
 import './form.css'
 import {useState} from "react";
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 
 function Form() {
     const [formValues, setFormValues] = useState({
@@ -63,8 +63,9 @@ function Form() {
                     <div className="FormAccepted">
                         <p className="AcceptedParagraph">
                             {State === "success" ?
-                                "Message has been sent :)"
-                                : "Sending..."}
+                                "Message has been sent :)" :
+                                State === "fail" ? "Something went wrong. Please try again later."
+                                    : "Sending..."}
                         </p>
                     </div>
                 )}

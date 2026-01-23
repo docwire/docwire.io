@@ -17,30 +17,30 @@
 
 .docwire__usecases-hero_top {
     max-width: 70%;
+}
 
-    h1 {
-        color: #fff;
-        margin-top: 3.5rem;
-        font-family: var(--font-family);
-        font-size: 3.5em;
-        margin-bottom: 1.5rem;
+.docwire__usecases-hero_top h1 {
+    color: #fff;
+    margin-top: 3.5rem;
+    font-family: var(--font-family);
+    font-size: 3.5em;
+    margin-bottom: 1.5rem;
+}
 
-        span {
-            color: #9747ff;
-        }
-    }
+.docwire__usecases-hero_top h1 span {
+    color: #9747ff;
+}
 
-    p {
-        width: auto;
-        max-width: 1126px;
-        color: #7c7c7c;
-        margin-bottom: 100px;
-        font-family: var(--font-family-Open-Sans);
-        font-weight: 600;
-        line-height: 1.4;
-        text-decoration: none;
-        font-size: min(1.2em, 20px);
-    }
+.docwire__usecases-hero_top p {
+    width: auto;
+    max-width: 1126px;
+    color: #7c7c7c;
+    margin-bottom: 100px;
+    font-family: var(--font-family-Open-Sans);
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: min(1.2em, 20px);
 }
 
 .docwire__usecases-hero_bottom {
@@ -59,28 +59,28 @@
     position: relative;
     margin-bottom: 80px;
     width: 33%;
+}
 
-    h2 {
-        line-height: 36px;
-        color: #fff;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        font-family: var(--font-family);
-        font-size: min(1.2em, 20px);
-        font-weight: 600;
-    }
+.docwire__usecases-single h2 {
+    line-height: 36px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: var(--font-family);
+    font-size: min(1.2em, 20px);
+    font-weight: 600;
+}
 
-    p {
-        height: auto;
-        max-height: none;
-        color: #7c7c7c;
-        object-fit: fill;
-        font-family: Open Sans, sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1.6;
-        overflow: hidden;
-    }
+.docwire__usecases-single p {
+    height: auto;
+    max-height: none;
+    color: #7c7c7c;
+    object-fit: fill;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    overflow: hidden;
 }
 
 .docwire__usecases-single_wrapper {
@@ -111,7 +111,7 @@
     object-fit: contain;
 }
 
-.docwire__usecases-single_wrapper_img img :hover {
+.docwire__usecases-single_wrapper_img img:hover {
     transform: none;
     animation: none;
 
@@ -125,11 +125,11 @@
 
     .docwire__usecases-hero_top {
         max-width: 80%;
+    }
 
-        h1 {
-            max-width: 100%;
-            font-size: 42px;
-        }
+    .docwire__usecases-hero_top h1 {
+        max-width: 100%;
+        font-size: 42px;
     }
 
     .docwire__usecases-hero_bottom {
@@ -147,14 +147,16 @@
     }
 
     .docwire__usecases-hero_top {
-        h1 {
-            font-size: 36px;
-        }
+        /* empty */
+    }
 
-        p {
-            margin-bottom: 50px;
-            font-size: 16px;
-        }
+    .docwire__usecases-hero_top h1 {
+        font-size: 36px;
+    }
+
+    .docwire__usecases-hero_top p {
+        margin-bottom: 50px;
+        font-size: 16px;
     }
 
     .docwire__usecases-hero_bottom {
@@ -166,34 +168,36 @@
         width: 100%;
         left: auto;
         right: auto;
-        a {
-            width: 100%;
-            .docwire__usecases-single_wrapper_img {
-                height: 150px;
-            }
-            h2 {
-                margin-bottom: 5px;
-                font-size: 16px;
-            }
-        }
-        p {
-            margin-bottom: 0;
-            font-size: 12px;
-        }
+    }
+    .docwire__usecases-single a {
+        width: 100%;
+    }
+    .docwire__usecases-single a .docwire__usecases-single_wrapper_img {
+        height: 150px;
+    }
+    .docwire__usecases-single a h2 {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .docwire__usecases-single p {
+        margin-bottom: 0;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 479px) {
     .docwire__usecases-hero_top {
-        h1 {
-            max-width: 100%;
-            font-size: 32px;
-        }
+        /* empty */
+    }
 
-        p {
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
+    .docwire__usecases-hero_top h1 {
+        max-width: 100%;
+        font-size: 32px;
+    }
+
+    .docwire__usecases-hero_top p {
+        margin-bottom: 30px;
+        font-size: 14px;
     }
 
     .docwire__usecases-hero_bottom {

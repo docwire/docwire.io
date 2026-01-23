@@ -79,8 +79,8 @@
         width: 100vw;
         padding-left: 10vw;
         padding-right: 10vw;
-        img {
-            display: none;
-        }
+    }
+    .docwire__haveyouever-section img {
+        display: none;
     }
 }

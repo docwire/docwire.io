@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import Link from '@docusaurus/Link';
 import React from "react";
 import './nopagecomponent.css'
 
@@ -10,7 +10,7 @@ function NoPageComponent() {
                     <h1>404</h1>
                     <h2>Page not found</h2>
                 </div>
-                <button><Link to="/">Homepage</Link></button>
+                <Link to="/" className="docwire__nopage-button">Homepage</Link>
             </div>
         </div>
     )

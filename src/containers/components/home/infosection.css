@@ -85,7 +85,7 @@
 }
 
 .docwire__info-intro_section2-gradient > img {
-    scale: 75%;
+    transform: scale(0.75);
 }
 
 .docwire__info-intro_section2-gradient.animated {
@@ -97,73 +97,75 @@
         transform: translate3d(-200px, -90px, 0px);
     }
     0% {
-        transform: translate3d(50px, -90px, 0px);;
+        transform: translate3d(50px, -90px, 0px);
     }
 }
 
 .docwire__info-top {
     margin-bottom: 50px;
+}
 
-    h3 {
-        color: #fff;
-        margin-top: 0;
-        margin-bottom: 20px;
-        margin-right: 5px;
-        font-family: var(--font-family);
-        line-height: 1;
-        font-size: min(2em, 32px);
-    }
+.docwire__info-top h3 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    font-family: var(--font-family);
+    line-height: 1;
+    font-size: min(2em, 32px);
+}
 
-    p {
-        width: auto;
-        max-width: 1126px;
-        color: #7c7c7c;
-        font-family: var(--font-family-Open-Sans);
-        font-weight: 600;
-        line-height: 1.4;
-        text-decoration: none;
-        font-size: min(1.2em, 20px);
-        margin-bottom: 30px;
-    }
+.docwire__info-top p {
+    width: auto;
+    max-width: 1126px;
+    color: #7c7c7c;
+    font-family: var(--font-family-Open-Sans);
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: min(1.2em, 20px);
+    margin-bottom: 30px;
 }
 
 .docwire__info-bottom {
-    h4 {
-        color: #fff;
-        margin-top: 0;
-        margin-left: 0;
-        font-family: var(--font-family);
-        font-weight: 400;
-        line-height: 1;
-        font-size: min(1.5em, 20px);
-        margin-bottom: 10px;
-    }
+    /* empty */
+}
 
-    p {
-        height: auto;
-        max-height: none;
-        color: #7c7c7c;
-        object-fit: fill;
-        font-family: var(--font-family-Open-Sans);
-        font-weight: 600;
-        line-height: 1.6;
-        overflow: hidden;
-        font-size: min(1em, 16px);
-    }
+.docwire__info-bottom h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-left: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 1;
+    font-size: min(1.5em, 20px);
+    margin-bottom: 10px;
+}
+
+.docwire__info-bottom p {
+    height: auto;
+    max-height: none;
+    color: #7c7c7c;
+    object-fit: fill;
+    font-family: var(--font-family-Open-Sans);
+    font-weight: 600;
+    line-height: 1.6;
+    overflow: hidden;
+    font-size: min(1em, 16px);
 }
 
 @media screen and (max-width: 991px) {
     .docwire__info-intro_section1 {
         margin-bottom: 0;
+    }
 
-        h1 {
-            align-self: flex-start;
-            font-size: 64px;
-        }
+    .docwire__info-intro_section1 h1 {
+        align-self: flex-start;
+        font-size: 64px;
+    }
 
-        h2 {
-            font-size: 16px;
-        }
+    .docwire__info-intro_section1 h2 {
+        font-size: 16px;
     }
 
     .docwire__info-intro_section2-text {
@@ -180,27 +182,31 @@
     }
 
     .docwire__info-top {
-        h3 {
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
+        /* empty */
+    }
 
-        p {
-            margin-bottom: 50px;
-            font-size: 16px;
-        }
+    .docwire__info-top h3 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .docwire__info-top p {
+        margin-bottom: 50px;
+        font-size: 16px;
     }
 
     .docwire__info-bottom {
-        h4 {
-            margin-bottom: 7px;
-            font-size: 14px;
-        }
+        /* empty */
+    }
 
-        p {
-            font-size: 12px;
-            margin-bottom: 0;
-        }
+    .docwire__info-bottom h4 {
+        margin-bottom: 7px;
+        font-size: 14px;
+    }
+
+    .docwire__info-bottom p {
+        font-size: 12px;
+        margin-bottom: 0;
     }
 
     .docwire__info-intro_section2-gradient {
@@ -215,38 +221,37 @@
 @media screen and (max-width: 767px) {
     .docwire__info-intro_section1 {
         padding-top: 60px;
+    }
 
-        h1 {
-            letter-spacing: -3px;
-        }
+    .docwire__info-intro_section1 h1 {
+        letter-spacing: -3px;
     }
 
     .docwire__info-intro_section2 {
         width: 90vw;
         flex-direction: column-reverse;
         margin-bottom: 5vh;
-
-        .docwire__info-intro_section2-text {
-            width: 100%;
-            align-self: auto;
-            align-items: center;
-            padding-right: 0;
-            display: flex;
-            max-width: 100%;
-            flex-direction: column;
-
-            .docwire__info-top {
-                margin-bottom: 30px;
-            }
-        }
+    }
+    .docwire__info-intro_section2 .docwire__info-intro_section2-text {
+        width: 100%;
+        align-self: auto;
+        align-items: center;
+        padding-right: 0;
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .docwire__info-intro_section2 .docwire__info-intro_section2-text .docwire__info-top {
+        margin-bottom: 30px;
     }
 
     .docwire__info-bottom {
-        h4 {
-            font-size: 16px;
-            display: flex;
-            overflow: visible;
-        }
+        /* empty */
+    }
+    .docwire__info-bottom h4 {
+        font-size: 16px;
+        display: flex;
+        overflow: visible;
     }
 
     .docwire__info-intro_section2-gradient {
@@ -264,40 +269,44 @@
         flex-direction: column;
         align-items: flex-start;
         display: flex;
+    }
 
-        h1 {
-            text-align: left;
-            letter-spacing: -1px;
-            font-size: 10em;
-        }
+    .docwire__info-intro_section1 h1 {
+        text-align: left;
+        letter-spacing: -1px;
+        font-size: 10em;
+    }
 
-        h2 {
-            max-width: 100%;
-            text-align: left;
-            font-size: 16px;
-        }
+    .docwire__info-intro_section1 h2 {
+        max-width: 100%;
+        text-align: left;
+        font-size: 16px;
     }
 
     .docwire__info-top {
-        h3 {
-            margin-bottom: 12px;
-            font-size: 20px;
-        }
+        /* empty */
+    }
 
-        p {
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
+    .docwire__info-top h3 {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .docwire__info-top p {
+        margin-bottom: 15px;
+        font-size: 14px;
     }
 
     .docwire__info-bottom {
-        h4 {
-            margin-bottom: 3px;
-        }
+        /* empty */
+    }
 
-        p {
-            margin-bottom: 12px;
-        }
+    .docwire__info-bottom h4 {
+        margin-bottom: 3px;
+    }
+
+    .docwire__info-bottom p {
+        margin-bottom: 12px;
     }
 
     .docwire__info-intro_section2-gradient {

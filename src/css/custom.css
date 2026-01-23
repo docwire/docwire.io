@@ -1,0 +1,76 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+/* Global Variables */
+:root {
+    /* Fonts */
+    --font-family: 'Montserrat', sans-serif; /* Updated to Montserrat based on usage */
+    --font-family-Open-Sans: 'Open Sans', sans-serif;
+
+    /* Colors */
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(283.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    --gradient-scroll-hover: linear-gradient(283deg, rgba(163, 78, 255, 1) -13.86%, rgba(241, 131, 73, 1) 99.55%);
+
+    --color-bg: #040C18;
+    --color-lighter-bg: #151d29;
+    --color-footer: #031B34;
+    --color-blog: #042c54;
+    --color-text: white;
+    --color-text-blog: #D3D3D3;
+    --color-subtext: #FF8A71;
+    --grey: #7c7c7c;
+    --orange: #ff9f1c;
+    --purple: #9747ff;
+
+    /* Docusaurus Theme Overrides */
+    --ifm-font-family-base: var(--font-family-Open-Sans);
+    --ifm-color-primary: var(--purple);
+    --ifm-background-color: var(--color-bg);
+    --ifm-text-color: var(--color-text);
+    --ifm-navbar-background-color: var(--color-bg);
+}
+
+/* Global Resets */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-bar);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-scroll-hover);
+    border-radius: 4px;
+}
+
+/* Utilities */
+@media screen and (max-width: 700px) {
+    .section__padding { padding: 4rem; }
+    .section__margin { margin: 4rem; }
+}
+
+@media screen and (max-width: 550px) {
+    .section__padding { padding: 4rem 2rem; }
+    .section__margin { margin: 4rem 2rem; }
+}
