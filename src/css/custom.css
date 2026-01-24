@@ -24,10 +24,9 @@
     --gradient-scroll-hover: linear-gradient(283deg, var(--brand-gradient-start) -13.86%, var(--brand-gradient-end) 99.55%);
 
     /* Light Mode Defaults */
-    --color-bg: color-mix(in srgb, var(--brand-white), var(--brand-black) 4%); /* Dynamically creates a light grey */
-    --color-surface: var(--brand-white);
-    --color-lighter-bg: var(--color-surface);
-    --color-footer: var(--color-surface);
+    --color-bg: var(--brand-white);
+    --color-surface: color-mix(in srgb, var(--brand-white), var(--brand-black) 4%); /* Light Grey Surface */
+    --color-footer: var(--color-bg);
     --color-blog: var(--color-surface);
     --color-text: color-mix(in srgb, var(--brand-black), var(--brand-white) 12%); /* Soft Black */
     --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-black) 25%); /* High contrast orange */
@@ -48,8 +47,7 @@ html[data-theme='dark'] {
     /* Tinting Black with Purple for a branded Deep Onyx look */
     --color-bg: color-mix(in srgb, var(--brand-black), var(--brand-violet) 6%);
     --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-violet) 14%);
-    --color-lighter-bg: var(--color-surface);
-    --color-footer: var(--color-surface);
+    --color-footer: var(--color-bg);
     --color-blog: var(--color-surface);
     --color-text: var(--brand-white);
     --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-white) 10%);
@@ -110,4 +108,10 @@ html[data-theme='dark'] {
     border-radius: 2rem;
     font-weight: 700;
     transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Logo Adaptation for Violet Header */
+.navbar__logo img {
+    filter: invert(100%);
+    mix-blend-mode: screen;
 }
