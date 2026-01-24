@@ -1,5 +1,5 @@
 export {default as HomeHeader} from './header/home/HomeHeader'
-export {default as Slider} from './slider/home/Slider'
+export {default as SupportedFormats} from './components/home/SupportedFormats'
 export {default as HomeHaveYouEver} from './components/home/HomeHaveYouEver'
 export {default as CTA} from './CTA/CTA'
 export {default as CTAcontact} from './CTA/CTA-contact'

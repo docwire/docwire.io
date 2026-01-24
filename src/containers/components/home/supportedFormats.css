@@ -1,0 +1,28 @@
+.docwire__supported-formats {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3vw;
+}
+
+.docwire__formats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.docwire__format-item {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.docwire__format-icon {
+    margin-bottom: 10px;
+}
+
+.docwire__format-name {
+    margin: 0;
+}
