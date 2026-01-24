@@ -8,28 +8,54 @@
     --font-family: 'Montserrat', sans-serif; /* Updated to Montserrat based on usage */
     --font-family-Open-Sans: 'Open Sans', sans-serif;
 
-    /* Colors */
-    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-    --gradient-bar: linear-gradient(283.22deg, #AE67FA -13.86%, #F49867 99.55%);
-    --gradient-scroll-hover: linear-gradient(283deg, rgba(163, 78, 255, 1) -13.86%, rgba(241, 131, 73, 1) 99.55%);
+    /* Colors - Brand */
+    --brand-white: #FFFFFF;
+    --brand-black: #000000;
+    --brand-orange: #ff9f1c;
+    --brand-purple: #9747ff;
 
-    --color-bg: #040C18;
-    --color-lighter-bg: #151d29;
-    --color-footer: #031B34;
-    --color-blog: #042c54;
-    --color-text: white;
-    --color-text-blog: #D3D3D3;
-    --color-subtext: #FF8A71;
-    --grey: #7c7c7c;
-    --orange: #ff9f1c;
-    --purple: #9747ff;
+    /* Derived Brand Colors (Calculated) */
+    --brand-gradient-start: color-mix(in srgb, var(--brand-purple), var(--brand-white) 15%);
+    --brand-gradient-end: color-mix(in srgb, var(--brand-orange), var(--brand-white) 15%);
+
+    /* Gradients */
+    --gradient-text: linear-gradient(89.97deg, var(--brand-gradient-start) 1.84%, var(--brand-gradient-end) 102.67%);
+    --gradient-bar: linear-gradient(283.22deg, var(--brand-gradient-start) -13.86%, var(--brand-gradient-end) 99.55%);
+    --gradient-scroll-hover: linear-gradient(283deg, var(--brand-gradient-start) -13.86%, var(--brand-gradient-end) 99.55%);
+
+    /* Light Mode Defaults */
+    --color-bg: color-mix(in srgb, var(--brand-white), var(--brand-black) 4%); /* Dynamically creates a light grey */
+    --color-surface: var(--brand-white);
+    --color-lighter-bg: var(--color-surface);
+    --color-footer: var(--color-surface);
+    --color-blog: var(--color-surface);
+    --color-text: color-mix(in srgb, var(--brand-black), var(--brand-white) 12%); /* Soft Black */
+    --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-black) 25%); /* High contrast orange */
 
     /* Docusaurus Theme Overrides */
     --ifm-font-family-base: var(--font-family-Open-Sans);
-    --ifm-color-primary: var(--purple);
+    --ifm-color-primary: var(--brand-purple);
     --ifm-background-color: var(--color-bg);
     --ifm-text-color: var(--color-text);
-    --ifm-navbar-background-color: var(--color-bg);
+    --ifm-navbar-background-color: var(--brand-purple);
+    --ifm-navbar-link-color: #FFFFFF;
+    --ifm-navbar-link-hover-color: var(--brand-gradient-end);
+    --ifm-footer-background-color: var(--color-footer);
+}
+
+/* Dark Mode Overrides */
+html[data-theme='dark'] {
+    /* Tinting Black with Purple for a branded Deep Onyx look */
+    --color-bg: color-mix(in srgb, var(--brand-black), var(--brand-purple) 6%);
+    --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-purple) 14%);
+    --color-lighter-bg: var(--color-surface);
+    --color-footer: var(--color-surface);
+    --color-blog: var(--color-surface);
+    --color-text: var(--brand-white);
+    --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-white) 10%);
+
+    --ifm-navbar-background-color: var(--brand-purple);
+    --ifm-footer-background-color: var(--color-footer);
 }
 
 /* Global Resets */
@@ -73,4 +99,15 @@
 @media screen and (max-width: 550px) {
     .section__padding { padding: 4rem 2rem; }
     .section__margin { margin: 4rem 2rem; }
+}
+
+/* Header "Contact Us" Button Styling */
+.navbar__item.navbar__link[href*="contact"],
+.navbar__link--contact {
+    background-color: #FFFFFF;
+    color: var(--brand-purple) !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
