@@ -47,6 +47,18 @@ To add a new post:
     Write the rest of your post here.
     ```
 
+#### Adding Images & Videos
+*   **Images**:
+    1.  Upload the image to the `static/img` folder.
+    2.  Use standard Markdown syntax to reference it:
+    ```markdown
+    ![Description](/img/your-image-name.jpg)
+    ```
+*   **YouTube**: To make the video responsive (adaptable to mobile screens), use the snippet below. Replace `VIDEO_ID` with the ID from your YouTube link.
+    ```jsx
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" style={{width: '100%', aspectRatio: '16/9'}} allowFullScreen frameBorder="0"></iframe>
+    ```
+
 ### 3. Adding Showcases
 Showcases are managed in a data file.
 
