@@ -13,8 +13,7 @@ const formats = [
 
 const getIcon = (format) => {
     const size = 32;
-    const color = "#555"; // Neutral gray, or use your brand color
-    const props = { size, color };
+    const props = { size };
 
     switch (format) {
         case "HTML": return <BsFiletypeHtml {...props} />;
@@ -39,15 +38,17 @@ const getIcon = (format) => {
 function SupportedFormats() {
     return (
         <div className='docwire__supported-formats'>
-            <div className="docwire__formats-grid">
-                {formats.map((format, index) => (
-                    <div key={index} className="docwire__format-item">
-                        <div className="docwire__format-icon">
-                            {getIcon(format)}
+            <div className="docwire__supported-formats-container">
+                <div className="docwire__formats-grid">
+                    {formats.map((format, index) => (
+                        <div key={index} className="docwire__format-item">
+                            <div className="docwire__format-icon">
+                                {getIcon(format)}
+                            </div>
+                            <h4 className="docwire__format-name">{format}</h4>
                         </div>
-                        <h4 className="docwire__format-name">{format}</h4>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     )

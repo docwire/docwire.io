@@ -1,7 +1,13 @@
 .docwire__supported-formats {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5vh 0;
+}
+
+.docwire__supported-formats-container {
     width: var(--container-width);
     max-width: var(--container-max-width);
-    margin-top: 3vw;
 }
 
 .docwire__formats-grid {
