@@ -205,10 +205,6 @@
         width: 90vw;
     }
 
-    .docwire__showcase-template_header h1 {
-        font-size: var(--font-size-h2);
-    }
-
     .docwire__showcase-template_header h2 {
         font-size: var(--font-size-body-large);
     }
@@ -260,10 +256,6 @@
 }
 
 @media screen and (max-width: 479px) {
-    .docwire__showcase-template_header h1 {
-        font-size: var(--font-size-h3);
-    }
-
     .docwire__showcase-template_header h2 {
         font-size: var(--font-size-body);
     }

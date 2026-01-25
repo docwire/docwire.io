@@ -161,7 +161,6 @@
 
     .docwire__info-intro_section1 h2 {
         align-self: flex-start;
-        font-size: var(--font-size-h2);
     }
 
     .docwire__info-subtitle {
@@ -274,7 +273,6 @@
     .docwire__info-intro_section1 h2 {
         text-align: left;
         letter-spacing: -1px;
-        font-size: var(--font-size-h3);
     }
 
     .docwire__info-subtitle {

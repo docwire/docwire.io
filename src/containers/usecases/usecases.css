@@ -129,7 +129,6 @@
 
     .docwire__usecases-hero_top h1 {
         max-width: 100%;
-        font-size: var(--font-size-h2);
     }
 
     .docwire__usecases-hero_bottom {
@@ -148,10 +147,6 @@
 
     .docwire__usecases-hero_top {
         /* empty */
-    }
-
-    .docwire__usecases-hero_top h1 {
-        font-size: var(--font-size-h3);
     }
 
     .docwire__usecases-hero_top p {
@@ -192,7 +187,6 @@
 
     .docwire__usecases-hero_top h1 {
         max-width: 100%;
-        font-size: var(--font-size-h3);
     }
 
     .docwire__usecases-hero_top p {
