@@ -7,9 +7,9 @@
 .docwire__wingssection-container {
     margin-bottom: 10vh;
     padding-top: 100px;
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     text-align: left;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@
     margin-top: 0;
     font-size: min(1.2em, 20px);
     width: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     color: var(--color-text);
     font-family: var(--font-family-Open-Sans);
     font-weight: 600;

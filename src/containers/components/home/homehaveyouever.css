@@ -12,14 +12,14 @@
     margin-bottom: 3vh;
     padding-left: 0;
     padding-right: 0;
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
 }
 
 .docwire__haveyouever-section img {
     width: 70vw;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
 }
 
 .padding {

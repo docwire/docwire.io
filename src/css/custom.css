@@ -40,6 +40,10 @@
     --ifm-navbar-link-color: #FFFFFF;
     --ifm-navbar-link-hover-color: var(--brand-gradient-end);
     --ifm-footer-background-color: var(--color-footer);
+
+    /* Layout Defaults */
+    --container-width: 80vw;
+    --container-max-width: 1126px;
 }
 
 /* Dark Mode Overrides */

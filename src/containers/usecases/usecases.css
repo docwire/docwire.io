@@ -6,9 +6,9 @@
 }
 
 .docwire__usecases-hero {
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0;
@@ -33,7 +33,7 @@
 
 .docwire__usecases-hero_top p {
     width: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     color: var(--color-text);
     margin-bottom: 100px;
     font-family: var(--font-family-Open-Sans);
@@ -44,8 +44,8 @@
 }
 
 .docwire__usecases-hero_bottom {
-    width: 80vw;
-    max-width: 1126px;
+    width: var(--container-width);
+    max-width: var(--container-max-width);
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;

@@ -1,6 +1,6 @@
 .docwire__supported-formats {
-    width: 100%;
-    max-width: 100%;
+    width: var(--container-width);
+    max-width: var(--container-max-width);
     margin-top: 3vw;
 }
 
@@ -14,9 +14,10 @@
 .docwire__format-item {
     text-align: center;
     padding: 15px;
-    border: 1px solid #eee;
+    border: none;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: var(--color-surface);
+    color: var(--color-text);
 }
 
 .docwire__format-icon {

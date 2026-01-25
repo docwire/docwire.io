@@ -11,9 +11,9 @@
 }
 
 .docwire__showcase-template_header {
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     flex-direction: column;
     margin-top: 3rem;
     display: flex;
@@ -95,9 +95,9 @@
 }
 
 .docwire__showcase-template_content {
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
