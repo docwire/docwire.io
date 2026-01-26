@@ -76,7 +76,7 @@
     max-height: none;
     color: var(--color-text);
     object-fit: fill;
-    font-family: Open Sans, sans-serif;
+    font-family: var(--font-family-Open-Sans);
     font-size: var(--font-size-body);
     font-weight: 600;
     line-height: 1.6;
@@ -145,10 +145,6 @@
         max-width: 100%;
     }
 
-    .docwire__usecases-hero_top {
-        /* empty */
-    }
-
     .docwire__usecases-hero_top p {
         margin-bottom: 50px;
         font-size: var(--font-size-body);
@@ -181,10 +177,6 @@
 }
 
 @media screen and (max-width: 479px) {
-    .docwire__usecases-hero_top {
-        /* empty */
-    }
-
     .docwire__usecases-hero_top h1 {
         max-width: 100%;
     }
