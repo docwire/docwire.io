@@ -1,14 +1,14 @@
 .select {
     width: auto;
     height: 50px;
-    color: #7c7c7c;
-    background-color: #111;
-    border: 1px solid #7c7c7c;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-subtext);
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
-    font-family: Open Sans, sans-serif;
+    font-family: var(--font-family-Open-Sans);
     font-size: var(--font-size-body);
     font-weight: 600;
     display: flex;
@@ -16,14 +16,14 @@
 
 .input {
     height: 50px;
-    border: 1px solid #7c7c7c;
+    border: 1px solid var(--color-subtext);
     border-bottom-style: solid;
     width: 100%;
     margin-bottom: 30px;
 }
 .input, .textarea {
-    color: #d9d9d9;
-    background-color: rgba(255, 255, 255, 0);
+    color: var(--color-text);
+    background-color: var(--color-bg);
     align-items: flex-start;
     padding-left: 0;
     font-family: var(--font-family-Open-Sans);
@@ -35,7 +35,7 @@
 .textarea {
     width: 99%;
     height: 200px;
-    border: 1px solid #7c7c7c;
+    border: 1px solid var(--color-subtext);
     padding: 0.5rem 0.5rem;
     resize: vertical;
     max-height: 27vh;
@@ -43,13 +43,13 @@
 
 .submitButton {
     width: 100%;
-    background-color: #9747ff;
+    background-color: var(--color-link);
     border-radius: 5px;
     margin-top: 30px;
     padding: 14px 20px;
     font-family: var(--font-family);
     font-size: var(--font-size-body);
-    color: #fff;
+    color: var(--color-bg);
     line-height: inherit;
     cursor: pointer;
     text-decoration: none;
@@ -62,8 +62,8 @@
     justify-content: center;
 }
 .AcceptedParagraph {
-    color: #d9d9d9;
-    background-color: rgba(255, 255, 255, 0);
+    color: var(--color-text);
+    background-color: transparent;
     align-items: flex-start;
     padding-left: 0;
     font-family: var(--font-family-Open-Sans);

@@ -4,14 +4,15 @@
 }
 
 .docwire__contact-bg {
-    width: 90vw;
-    max-width: none;
+    width: var(--container-width);
+    max-width: var(--container-max-width);
     background-image: var(--gradient-bar);
     border-radius: 7px;
     margin-bottom: 10vh;
     background-size: 200% 200%;
     animation: gradient 8s ease infinite;
-    height: 80vh;
+    height: auto;
+    padding: 4rem 2rem;
     align-items: stretch;
     display: flex;
 }
@@ -33,21 +34,21 @@
     font-size: var(--font-size-body);
     line-height: 1;
     align-items: flex-start;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0;
+    padding-right: 40px;
     width: 50%;
     flex-direction: column;
     justify-content: center;
     display: flex;
     margin-bottom: 10px;
-
+    color: var(--brand-white);
 }
 
 .docwire__contact-text_h1 {
     text-align: left;
     font-size: var(--font-size-h1);
     font-weight: 600;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
     text-transform: capitalize;
     white-space: normal;
     margin-top: 0;
@@ -66,6 +67,7 @@
     max-height: none;
     object-fit: fill;
     font-family: var(--font-family-Open-Sans);
+    color: var(--brand-white);
 }
 
 .docwire__contact-form {
@@ -73,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 0;
     display: flex;
 }
 
