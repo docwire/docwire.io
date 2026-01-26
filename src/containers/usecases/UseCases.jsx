@@ -24,7 +24,7 @@ function UseCases() {
                                 <Link to={`/showcases/${item.linkName}`}>
                                     <div className="docwire__usecases-single_wrapper">
                                         <div className="docwire__usecases-single_wrapper_img">
-                                            <img src={require(`../../assets/${item.image}`)} alt={item.companyName}/>
+                                            <img src={require(`../../assets/${item.image}`).default} alt={item.companyName}/>
                                         </div>
                                     </div>
                                     <h2>{item.companyName}</h2>
