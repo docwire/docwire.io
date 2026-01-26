@@ -32,15 +32,6 @@
     --color-text: #1f1f1f;    /* Fallback: Soft Black */
     --color-subtext: #cc7f16; /* Fallback: High contrast orange */
 
-    /* Derived colors for modern browsers */
-    @supports (color: color-mix(in srgb, red, blue)) {
-        --brand-gradient-start: color-mix(in srgb, var(--brand-violet), var(--brand-white) 15%);
-        --brand-gradient-end: color-mix(in srgb, var(--brand-orange), var(--brand-white) 15%);
-        --color-surface: color-mix(in srgb, var(--brand-white), var(--brand-black) 4%);
-        --color-text: color-mix(in srgb, var(--brand-black), var(--brand-white) 12%);
-        --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-black) 25%);
-    }
-
     /* Link Colors */
     --color-link: var(--brand-violet);
     --color-link-hover: var(--color-subtext);
@@ -72,14 +63,24 @@ html[data-theme='dark'] {
     --color-surface: #1a1023; /* Fallback: Deep purple */
     --color-subtext: #ffc966; /* Fallback: Lighter orange */
 
-    @supports (color: color-mix(in srgb, red, blue)) {
-        --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-violet) 14%);
-        --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-white) 10%);
-    }
-
     /* Link Colors */
     --color-link: var(--brand-white);
     --color-link-hover: var(--brand-violet);
+}
+
+/* Derived colors for modern browsers */
+@supports (color: color-mix(in srgb, red, blue)) {
+    :root {
+        --brand-gradient-start: color-mix(in srgb, var(--brand-violet), var(--brand-white) 15%);
+        --brand-gradient-end: color-mix(in srgb, var(--brand-orange), var(--brand-white) 15%);
+        --color-surface: color-mix(in srgb, var(--brand-white), var(--brand-black) 4%);
+        --color-text: color-mix(in srgb, var(--brand-black), var(--brand-white) 12%);
+        --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-black) 25%);
+    }
+    html[data-theme='dark'] {
+        --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-violet) 14%);
+        --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-white) 10%);
+    }
 }
 
 /* Docusaurus Theme Overrides - Applied to both modes to ensure precedence */
