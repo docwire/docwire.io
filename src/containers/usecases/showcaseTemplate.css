@@ -106,7 +106,7 @@
 }
 
 .docwire__showcase-template_content a {
-    color: var(--orange);
+    color: var(--color-link);
     margin-top: 0;
     text-decoration: none;
     display: flex;
