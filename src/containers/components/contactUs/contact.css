@@ -80,18 +80,17 @@
 .docwire__contact-form_form {
     width: 100%;
     max-width: 500px;
-    background-color: #111;
+    background-color: var(--color-surface);
     border-radius: 10px;
     flex: 0 auto;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
     padding: 50px;
-    color: white;
+    color: var(--color-text);
 }
 
-h2 {
-
+.docwire__contact-form_form h2 {
     margin-top: 0;
     margin-bottom: 20px;
     margin-right: 5px;
