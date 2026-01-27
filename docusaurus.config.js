@@ -69,7 +69,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Docwire',
+        title: '',
         logo: {
           alt: 'Docwire Logo',
           src: 'img/logoDocWire.JPG',

@@ -146,6 +146,7 @@
     vertical-align: middle;
     display: inline-block;
     border: 0;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.8));
 }
 
 .docwire__showcase-template_content-left .top_left p {

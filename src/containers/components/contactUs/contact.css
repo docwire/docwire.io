@@ -6,27 +6,11 @@
 .docwire__contact-bg {
     width: var(--container-width);
     max-width: var(--container-max-width);
-    background-image: var(--gradient-bar);
-    border-radius: 7px;
     margin-bottom: 10vh;
-    background-size: 200% 200%;
-    animation: gradient 8s ease infinite;
     height: auto;
-    padding: 4rem 2rem;
+    padding: 0;
     align-items: stretch;
     display: flex;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
 }
 
 .docwire__contact-text {
@@ -41,7 +25,7 @@
     justify-content: center;
     display: flex;
     margin-bottom: 10px;
-    color: var(--brand-white);
+    color: var(--color-text);
 }
 
 .docwire__contact-text_h1 {
@@ -67,7 +51,7 @@
     max-height: none;
     object-fit: fill;
     font-family: var(--font-family-Open-Sans);
-    color: var(--brand-white);
+    color: var(--color-text);
 }
 
 .docwire__contact-form {
@@ -106,7 +90,7 @@
         height: auto;
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 3rem;
+        padding-top: 0;
         align-items: center;
     }
     .docwire__contact-text_section {
