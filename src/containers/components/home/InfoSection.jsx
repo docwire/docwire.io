@@ -4,16 +4,16 @@ import React from "react";
 
 function InfoSection() {
     return (
-        <div className="docwire__info">
-            <div className="docwire__info-intro_section1">
-                <h2>So, what can it do?</h2>
-                <p className="docwire__info-subtitle">Well let us show you</p>
+        <>
+            <div className="docwire__info-intro_section1 section">
+                <h2 className="text-display">So, what can it do?</h2>
+                <p className="docwire__info-subtitle text-lead">Well let us show you</p>
             </div>
-            <div className="docwire__info-intro_section2">
+            <div className="docwire__info-intro_section2 section">
                 <div className="docwire__info-intro_section2-text">
                     <div className="docwire__info-top">
                         <h3>Process data from all popular formats</h3>
-                        <p>No matter if it’s scanned reports or structured excel sheets, the Docwire SDK helps you
+                        <p className="text-lead">No matter if it’s scanned reports or structured excel sheets, the Docwire SDK helps you
                             identify and extract the data you need.</p>
                     </div>
                     <div className="docwire__info-bottom">
@@ -26,11 +26,11 @@ function InfoSection() {
                             and more!</p>
                     </div>
                 </div>
-                <div className="docwire__info-intro_section2-gradient">
-                    <img src={Formats} alt="Floating Wings"/>
+                <div className="docwire__info-intro_section2-gradient card">
+                    <img src={Formats} alt="Supported Formats"/>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

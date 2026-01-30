@@ -39,7 +39,7 @@ function Form() {
                 (
                     <form id="email-form" name="email-form" method="POST" action="" onSubmit={handleOnSubmit}>
                         <h2>I want to ask about...</h2>
-                        <select id="Reason" name="Reason" className="select" value={formValues.reason}
+                        <select id="Reason" name="Reason" className="select text-ui" value={formValues.reason}
                                 onChange={e => setFormValues({...formValues, reason: e.target.value})}>
                             <option value="" disabled={!!formValues.reason}>Select one...</option>
                             <option value="Demo">Demo</option>
@@ -49,19 +49,19 @@ function Form() {
                             <option value="Support">Support</option>
                             <option value="Other">Other</option>
                         </select>
-                        <input type="text" id="name" name="name" className="input" maxLength="256" placeholder="Name"
+                        <input type="text" id="name" name="name" className="input text-ui" maxLength="256" placeholder="Name"
                                onChange={handleChange} required/>
-                        <input type="email" id="email" name="email" className="input" maxLength="256"
+                        <input type="email" id="email" name="email" className="input text-ui" maxLength="256"
                                placeholder="Email" onChange={handleChange} required/>
-                        <textarea id="message" name="message" className="textarea" placeholder="Your message ..."
+                        <textarea id="message" name="message" className="textarea text-ui" placeholder="Your message ..."
                                   onChange={handleChange} required/>
-                        <input type="submit" value="Send request" className="submitButton"
+                        <input type="submit" value="Send request" className="submitButton button-pill"
                                disabled={State === "loading"}/>
 
                     </form>
                 ) : (
                     <div className="FormAccepted">
-                        <p className="AcceptedParagraph">
+                        <p className="AcceptedParagraph text-ui">
                             {State === "success" ?
                                 "Message has been sent :)" :
                                 State === "fail" ? "Something went wrong. Please try again later."

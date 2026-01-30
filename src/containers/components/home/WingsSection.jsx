@@ -4,13 +4,12 @@ import Wings from "../../../assets/Wings.png"
 
 function WingsSection() {
     return (
-        <div className="docwire__wingssection">
-            <div className="docwire__wingssection-container">
+            <div className="docwire__wingssection-container section">
                 <div className="docwire__wingssection-container_text">
                     <h2>
                         Docwire SDK is a light-weight, secure C++ text miner optimized for any tech stack
                     </h2>
-                    <p>
+                    <p className="text-lead">
                         Docwire SDK is a light-weight, secure C++ text miner that is optimized for any tech stack. With
                         our
                         powerful libraries, you can implement lightning-fast text extraction that seamlessly blends with
@@ -26,7 +25,6 @@ function WingsSection() {
                     <img src={Wings} alt="Floating Wings"/>
                 </div>
             </div>
-        </div>
     )
 
 }

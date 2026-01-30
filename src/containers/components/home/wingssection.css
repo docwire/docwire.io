@@ -1,53 +1,27 @@
-.docwire__wingssection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .docwire__wingssection-container {
-    margin-bottom: 10vh;
     padding-top: 100px;
-    width: var(--container-width);
-    height: auto;
-    max-width: var(--container-max-width);
-    text-align: left;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
     display: flex;
 }
 
 .docwire__wingssection-container_text {
     width: 50%;
-    height: 100%;
     flex-direction: column;
-    justify-self: center;
-    padding-top: 0;
     display: flex;
+    padding-right: 5%;
 }
 
 .docwire__wingssection-container_text h2 {
-    color: var(--color-text);
-    text-align: left;
-    font-size: var(--font-size-h2);
-    margin-top: 0;
     margin-bottom: 24px;
-    font-family: var(--font-family-header);
-    line-height: var(--line-height-heading);
-    font-weight: var(--font-weight-h2);
 }
 
 .docwire__wingssection-container_text p {
     margin-bottom: 0;
-    margin-top: 0;
-    font-size: var(--font-size-lead);
-    width: auto;
-    max-width: var(--container-max-width);
-    color: var(--color-text);
-    font-family: var(--font-family-lead);
-    font-weight: var(--font-weight-lead);
-    line-height: var(--line-height-lead);
-    text-decoration: none;
+}
+
+.docwire__wingssection-container_wings {
+    width: 50%;
 }
 
 .docwire__wingssection-container_wings img {
@@ -57,23 +31,22 @@
 
 @media screen and (max-width: 1250px) {
     .docwire__wingssection-container_text {
-        width: 60vw;
+        width: 60%;
     }
     .docwire__wingssection-container_wings {
-        width: 40vw;
-    }
-    .docwire__wingssection-container_wings img {
-        width: 100%;
+        width: 40%;
     }
 }
 
 @media screen and (max-width: 750px) {
-    .docwire__wingssection-container{
-        width: 95vw;
+    .docwire__wingssection-container {
+        width: 100%;
         flex-direction: column;
     }
     .docwire__wingssection-container_text {
-        width: 80vw;
+        width: 100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     .docwire__wingssection-container_wings {
         display: none;

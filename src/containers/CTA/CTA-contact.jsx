@@ -4,20 +4,16 @@ import Link from '@docusaurus/Link';
 
 function CTAcontact() {
     return (
-        <div className='docwire__cta'>
-            <div className='docwire__cta-background'>
+            <div className='docwire__cta-background section card'>
                 <div className='docwire__cta-background_banner'>
                     <div className='docwire__cta-content'>
                         <h3>Give our demo a try</h3>
-                        <p>Have a go and experiment with our non-commerical license, without trial periods or gated
+                        <p className="text-lead">Have a go and experiment with our non-commerical license, without trial periods or gated
                             functions!</p>
                     </div>
                 </div>
-                <div className="docwire__cta-button">
-                    <Link to="/contact-us">Get licence</Link>
-                </div>
+                <Link to="/contact-us" className="docwire__cta-button button-pill">Get licence</Link>
             </div>
-        </div>
     )
 }
 

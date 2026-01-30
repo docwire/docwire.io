@@ -12,36 +12,32 @@ const formats = [
 ];
 
 const getIcon = (format) => {
-    const size = 32;
-    const props = { size };
-
     switch (format) {
-        case "HTML": return <BsFiletypeHtml {...props} />;
-        case "EML": return <BsEnvelopePaper {...props} />;
-        case "PDF": return <BsFiletypePdf {...props} />;
+        case "HTML": return <BsFiletypeHtml />;
+        case "EML": return <BsEnvelopePaper />;
+        case "PDF": return <BsFiletypePdf />;
         case "ODFXML":
-        case "OOXML": return <BsFiletypeXml {...props} />;
-        case "iWork": return <BsApple {...props} />;
-        case "ODT": return <BsFileEarmarkText {...props} />;
+        case "OOXML": return <BsFiletypeXml />;
+        case "iWork": return <BsApple />;
+        case "ODT": return <BsFileEarmarkText />;
         case "ODF":
-        case "PRF": return <BsFileEarmark {...props} />;
-        case "PPT": return <BsFiletypePpt {...props} />;
+        case "PRF": return <BsFileEarmark />;
+        case "PPT": return <BsFiletypePpt />;
         case "XLSB":
-        case "XLS": return <BsFiletypeXls {...props} />;
-        case "DOC": return <BsFiletypeDoc {...props} />;
-        case "PAGES": return <BsFileEarmarkRichtext {...props} />;
-        case "KEYNOTE": return <BsFileEarmarkSlides {...props} />;
-        default: return <BsFileEarmark {...props} />;
+        case "XLS": return <BsFiletypeXls />;
+        case "DOC": return <BsFiletypeDoc />;
+        case "PAGES": return <BsFileEarmarkRichtext />;
+        case "KEYNOTE": return <BsFileEarmarkSlides />;
+        default: return <BsFileEarmark />;
     }
 };
 
 function SupportedFormats() {
     return (
-        <div className='docwire__supported-formats'>
-            <div className="docwire__supported-formats-container">
+            <div className="docwire__supported-formats-container section">
                 <div className="docwire__formats-grid">
                     {formats.map((format, index) => (
-                        <div key={index} className="docwire__format-item">
+                        <div key={index} className="docwire__format-item card">
                             <div className="docwire__format-icon">
                                 {getIcon(format)}
                             </div>
@@ -50,7 +46,6 @@ function SupportedFormats() {
                     ))}
                 </div>
             </div>
-        </div>
     )
 
 }

@@ -1,15 +1,3 @@
-.docwire__supported-formats {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 5vh 0;
-}
-
-.docwire__supported-formats-container {
-    width: var(--container-width);
-    max-width: var(--container-max-width);
-}
-
 .docwire__formats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -20,14 +8,17 @@
 .docwire__format-item {
     text-align: center;
     padding: 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--color-surface);
-    color: var(--color-text);
 }
 
 .docwire__format-icon {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.docwire__format-icon svg {
+    width: 32px;
+    height: 32px;
 }
 
 .docwire__format-name {

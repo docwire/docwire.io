@@ -10,7 +10,7 @@ function NoPageComponent() {
                     <h1>404</h1>
                     <h2>Page not found</h2>
                 </div>
-                <Link to="/" className="docwire__nopage-button">Homepage</Link>
+                <Link to="/" className="button-pill">Homepage</Link>
             </div>
         </div>
     )

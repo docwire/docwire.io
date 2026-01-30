@@ -1,87 +1,42 @@
-.docwire__unlockthepower {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .docwire__unlockthepower-content {
-    width: var(--container-width);
-    height: auto;
-    max-width: var(--container-max-width);
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
-    margin-bottom: 15vh;
-    padding-left: 0;
-    padding-right: 0;
     display: flex;
 }
 
 .docwire__unlockthepower-content_subheader {
     margin-bottom: 20px;
-    font-size: var(--font-size-lead);
-    width: auto;
-    max-width: var(--container-max-width);
-    color: var(--color-text);
-    text-align: center;
     margin-top: 1em;
-    font-family: var(--font-family-lead);
-    font-weight: var(--font-weight-lead);
-    line-height: var(--line-height-lead);
-    text-decoration: none;
+    text-align: center;
 }
 
 .docwire__unlockthepower-content_header {
     width: 50%;
-    text-align: center;
-    font-size: var(--font-size-h2);
-    color: var(--color-text);
-    margin-top: 0;
     margin-bottom: 24px;
-    font-family: var(--font-family-header);
-    line-height: var(--line-height-heading);
-    font-weight: var(--font-weight-h2);
+    text-align: center;
 }
 
 .docwire__unlockthepower-content_section {
     width: 70%;
-    text-align: left;
-    font-size: var(--font-size-lead);
-    max-width: var(--container-max-width);
-    color: var(--color-text);
     margin-bottom: 100px;
-    font-family: var(--font-family-lead);
-    font-weight: var(--font-weight-lead);
-    line-height: var(--line-height-lead);
-    text-decoration: none;
 }
 
 .docwire__unlockthepower-content_infocard_section {
-    width: var(--container-width);
-    height: auto;
-    max-width: var(--container-max-width);
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 0;
     display: flex;
-    position: static;
 }
 
 .docwire__unlockthepower-content_infocard_single {
     width: 32%;
-    height: auto;
     background-image: var(--gradient-bar);
-    border-radius: 6px;
-    margin-left: 0;
+    border-radius: 12px;
     padding: 2px;
 }
 
 .docwire__unlockthepower-content_infocard_content {
     width: 100%;
     height: 100%;
-    background-color: var(--color-surface);
-    font-family: var(--font-family-body);
-    border-radius: 6px;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
@@ -89,41 +44,36 @@
 }
 
 .lightning {
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
     display: block;
+    color: var(--brand-orange);
 }
 
 .infocard_header {
     width: 90%;
     margin-top: 0.3em;
-    font-family: var(--font-family-lead);
-    font-size: var(--font-size-lead);
 }
 
 .infocard_paragraph {
     margin-bottom: 0;
     margin-top: 0.4em;
-    font-weight: var(--font-weight-body);
-    font-size: var(--font-size-body);
-    height: auto;
-    max-height: none;
-    color: var(--color-text);
-    line-height: var(--line-height-body);
-    overflow: hidden;
 }
 
 
 @media screen and (max-width: 750px) {
-    .docwire__unlockthepower-content_section {
-        width: 95vw;
+    .docwire__unlockthepower-content {
+        width: 100%;
         padding-left: 10vw;
         padding-right: 10vw;
     }
 
+    .docwire__unlockthepower-content_section {
+        width: 100%;
+    }
+
     .docwire__unlockthepower-content_header {
-        width: 85%;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        width: 100%;
     }
 
     .docwire__unlockthepower-content_infocard_section {
@@ -134,23 +84,5 @@
     .docwire__unlockthepower-content_infocard_single {
         width: 100%;
         margin-bottom: 1.5rem;
-        border-radius: 6px;
-        margin-left: 0;
-        padding: 2px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .docwire__unlockthepower-content,
-    .docwire__unlockthepower-content_section {
-        width: 100vw;
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-
-    .docwire__unlockthepower-content_header {
-        width: 85%;
-        padding-left: 10vw;
-        padding-right: 10vw;
     }
 }

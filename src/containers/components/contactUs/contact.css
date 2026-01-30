@@ -1,53 +1,24 @@
-.docwire__contact {
-    display: flex;
-    justify-content: center;
-}
-
 .docwire__contact-bg {
-    width: var(--container-width);
-    max-width: var(--container-max-width);
-    margin-bottom: 10vh;
-    height: auto;
-    padding: 0;
     align-items: stretch;
     display: flex;
 }
 
 .docwire__contact-text {
     align-items: flex-start;
-    padding-left: 0;
-    padding-right: 40px;
+    padding-right: 5%;
     width: 50%;
     flex-direction: column;
     justify-content: center;
     display: flex;
-    margin-bottom: 10px;
-    color: var(--color-text);
 }
 
 .docwire__contact-text_h1 {
-    text-align: left;
-    font-size: var(--font-size-h1);
-    font-weight: var(--font-weight-h1);
-    letter-spacing: -2px;
-    text-transform: capitalize;
-    white-space: normal;
-    margin-top: 0;
     margin-bottom: 0;
-    font-family: var(--font-family-header);
-    line-height: var(--line-height-heading);
 }
 
 .docwire__contact-text_section {
     width: 80%;
-    text-align: left;
     margin-top: 25px;
-    font-size: var(--font-size-lead);
-    line-height: var(--line-height-lead);
-    font-weight: var(--font-weight-lead);
-    max-height: none;
-    font-family: var(--font-family-lead);
-    color: var(--color-text);
 }
 
 .docwire__contact-form {
@@ -55,39 +26,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
     display: flex;
 }
 
 .docwire__contact-form_form {
     width: 100%;
     max-width: 500px;
-    background-color: var(--color-surface);
-    border-radius: 10px;
     flex: 0 auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
     padding: 50px;
-    color: var(--color-text);
 }
 
 .docwire__contact-form_form h2 {
     margin-top: 0;
     margin-bottom: 20px;
-    margin-right: 5px;
-    font-family: var(--font-family-header);
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-h2);
-    line-height: var(--line-height-heading);
 }
 
 @media screen and (max-width: 1050px) {
     .docwire__contact-bg {
-        height: auto;
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 0;
         align-items: center;
     }
     .docwire__contact-text_h1
@@ -95,17 +52,22 @@
         letter-spacing: normal;
     }
     .docwire__contact-text {
-        justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .docwire__contact-text_section {
+        width: 100%;
     }
     .docwire__contact-form {
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        max-width: 95%;
+        width: 100%;
     }
+}
+
+@media screen and (max-width: 550px) {
     .docwire__contact-form_form {
-        max-width: 95%;
+        padding: 30px;
     }
 }

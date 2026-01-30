@@ -11,7 +11,7 @@
     transform: translate(-50%, -50%);
     max-width: 767px;
     width: 100%;
-    line-height: 1.4;
+    line-height: var(--line-height-lead);
     text-align: center;
 }
 
@@ -23,49 +23,24 @@
 }
 
 .docwire__nopage-content404 h1 {
-    font-family: var(--font-family-header);
     position: absolute;
     left: 50%;
     top: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: var(--font-size-h1);
-    font-weight: var(--font-weight-h1);
-    margin-top: 0;
     margin-bottom: 0;
-    margin-left: 0;
-    color: var(--color-text);
     text-transform: uppercase;
-    text-shadow: -1px -1px 0 #AE67FA, 1px 1px 0 #F49867;
+    text-shadow: -1px -1px 0 var(--brand-violet), 1px 1px 0 var(--brand-orange);
     letter-spacing: -2px;
 }
 
 .docwire__nopage-content404 h2 {
-    font-family: var(--font-family-header);
     position: absolute;
     left: 0;
     right: 0;
     top: 110px;
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-h2);
-    color: var(--color-text);
     text-transform: uppercase;
-    text-shadow: 0 2px 0 #AE67FA;
+    text-shadow: 0 2px 0 var(--brand-violet);
     letter-spacing: 13px;
     margin: 0;
-}
-
-.docwire__nopage-button {
-    font-family: var(--font-family-ui);
-    display: inline-block;
-    text-transform: uppercase;
-    color: var(--brand-violet);
-    text-decoration: none;
-    border: 2px solid;
-    background: 0 0;
-    padding: 10px 40px;
-    font-size: var(--font-size-ui);
-    font-weight: var(--font-weight-ui);
-    -webkit-transition: .2s all;
-    transition: .2s all;
 }

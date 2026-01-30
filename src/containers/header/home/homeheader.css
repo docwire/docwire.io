@@ -1,14 +1,8 @@
 .docwire__header {
-    display: flex;
-    justify-content: center;
     margin-top: 15px;
-
 }
 .docwire__header-software {
     display: flex;
-    width: 80vw;
-    max-width: 1126px;
-    background-color: var(--color-bg);
 }
 
 .docwire__header-software-content {
@@ -16,30 +10,19 @@
     flex-direction: column;
     justify-content: center;
     display: flex;
-    margin-right: 1vw;
+}
+
+.docwire__header-software-content:first-child {
+    padding-right: 5%;
 }
 .docwire__header-software-content_header {
     margin-top: 10px;
-    font-size: var(--font-size-h1);
-    font-weight: var(--font-weight-h1);
-    font-family: var(--font-family-header);
-}
-
-.docwire__header-software-content_text {
-    height: auto;
-    max-height: none;
-    color: var(--color-text);
-    font-family: var(--font-family-body);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-body);
-    line-height: var(--line-height-body);
-    overflow: hidden;
 }
 
 .docwire__header-software-content img {
     max-height: 500px;
+    max-width: 100%;
     object-fit: contain;
-    justify-content: center;
 }
 
 @media screen and (max-width: 550px) {

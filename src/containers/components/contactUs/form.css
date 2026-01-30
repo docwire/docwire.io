@@ -1,74 +1,37 @@
-.select {
-    width: auto;
-    height: 50px;
+.input,
+.select,
+.textarea {
+    display: block;
+    width: 100%;
     color: var(--color-text);
     background-color: var(--color-bg);
     border: 1px solid var(--color-subtext);
-    margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    font-family: var(--font-family-ui);
-    font-size: var(--font-size-ui);
-    font-weight: var(--font-weight-ui);
-    display: flex;
+    padding: 0 0.75rem;
 }
 
+.select,
 .input {
     height: 50px;
-    border: 1px solid var(--color-subtext);
-    border-bottom-style: solid;
-    width: 100%;
-    margin-bottom: 30px;
-}
-.input, .textarea {
-    color: var(--color-text);
-    background-color: var(--color-bg);
-    align-items: flex-start;
-    padding-left: 0;
-    font-family: var(--font-family-ui);
-    font-size: var(--font-size-ui);
-    font-weight: var(--font-weight-ui);
-    display: block;
 }
 
 .textarea {
-    width: 99%;
     height: 200px;
-    border: 1px solid var(--color-subtext);
-    padding: 0.5rem 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     resize: vertical;
     max-height: 27vh;
 }
 
 .submitButton {
     width: 100%;
-    background-color: var(--color-link);
-    border-radius: 5px;
-    margin-top: 30px;
-    padding: 14px 20px;
-    font-family: var(--font-family-ui);
-    font-size: var(--font-size-ui);
-    color: var(--color-bg);
-    line-height: inherit;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    border: 0;
-    font-weight: var(--font-weight-ui);
+    margin-top: 10px;
 }
 
 .FormAccepted {
-   display: flex;
+    display: flex;
     justify-content: center;
 }
 .AcceptedParagraph {
     color: var(--color-text);
-    background-color: transparent;
-    align-items: flex-start;
-    padding-left: 0;
-    font-family: var(--font-family-ui);
-    font-size: var(--font-size-ui);
-    font-weight: var(--font-weight-ui);
-    display: block;
 }

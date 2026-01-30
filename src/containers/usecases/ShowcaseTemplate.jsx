@@ -32,29 +32,29 @@ function ShowcaseTemplate(props) {
     return (
         <Layout title={showcase.companyName}>
             <div className="docwire__showcase-template">
-                <div className="docwire__showcase-template_header">
-                    <h1>{showcase.companyName}</h1>
+                <div className="docwire__showcase-template_header section">
+                    <h1 className="text-display">{showcase.companyName}</h1>
                     <h2>{showcase.subtitle}</h2>
                     <div className="docwire__showcase-template_header-buttons">
                         <a href={showcase.website} className="link" target="_blank" rel="noopener noreferrer">
-                            <div>Website</div>
+                            <div className="text-ui">Website</div>
                             <HiExternalLink className="icon"/>
                         </a>
-                        <Link to="/contact-us" className="cta">Get licence</Link>
+                        <Link to="/contact-us" className="cta button-pill">Get licence</Link>
                     </div>
                 </div>
-                <div className="docwire__showcase-template_content">
-                    <div className="docwire__showcase-template_content-left">
+                <div className="docwire__showcase-template_content section">
+                    <div className="docwire__showcase-template_content-left card">
                         <div className="top_left">
                             <img src={imageSrc} alt={showcase.companyName}/>
                             <p>{showcase.whoWeAre}</p>
                         </div>
                         <Link to="/showcases">
-                            <div className="text">Other showcases</div>
+                            <div className="text text-ui">Other showcases</div>
                             <div className="arrow"><HiArrowRight/></div>
                         </Link>
                     </div>
-                    <div className="docwire__showcase-template_content-right">
+                    <div className="docwire__showcase-template_content-right card">
                         <div className="question"><h4>What is {showcase.companyName}</h4></div>
                         <div className="answer"><p>{showcase.whatIs}</p></div>
 

@@ -5,13 +5,12 @@ import Link from '@docusaurus/Link';
 
 function UseCases() {
     return (
-        <div className='docwire__usecases'>
-            <div className='docwire__usecases-hero'>
+            <div className='docwire__usecases-hero section'>
                 <div className='docwire__usecases-hero_top'>
                     <h1>
                         Explore how the <span>Docwire SDK</span> is applied in the world
                     </h1>
-                    <p>
+                    <p className="text-lead">
                         The Docwire SDK provides the core functionality of services delivered to hundreds of thousands
                         of users. These cases cover how the text extractor has been operationally implemented for our
                         clients.
@@ -23,7 +22,7 @@ function UseCases() {
                             <div className="docwire__usecases-single" key={item.linkName}>
                                 <Link to={`/showcases/${item.linkName}`}>
                                     <div className="docwire__usecases-single_wrapper">
-                                        <div className="docwire__usecases-single_wrapper_img">
+                                        <div className="docwire__usecases-single_wrapper_img card">
                                             <img src={require(`../../assets/${item.image}`).default} alt={item.companyName}/>
                                         </div>
                                     </div>
@@ -35,7 +34,6 @@ function UseCases() {
                     }
                 </div>
             </div>
-        </div>
     )
 
 }

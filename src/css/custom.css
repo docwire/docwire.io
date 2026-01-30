@@ -53,7 +53,7 @@
     --font-size-h3: clamp(1.5rem, 3vw + 1rem, 2rem);    /* Fluid: 24px -> 32px */
     --font-size-h4: clamp(1.25rem, 2vw + 1rem, 1.5rem); /* Fluid: 20px -> 24px */
     --font-size-lead: clamp(1rem, 1vw + 0.75rem, 1.25rem); /* Fluid: 16px -> 20px */
-    --font-size-body: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);    /* Fluid: 14px -> 16px */
+    --font-size-body: clamp(1rem, 1vw + 0.75rem, 1.25rem);    /* Fluid: 16px -> 20px */
     --font-size-ui: var(--font-size-body); /* UI Elements (Buttons, Inputs) */
 
     /* Font Weights - Brand Definition */
@@ -74,6 +74,18 @@
     --line-height-heading: 1.2;
     --line-height-lead: 1.4;
     --line-height-body: 1.6;
+
+    /* Button Colors - Semantic */
+    --color-btn-primary-bg: var(--color-link);      /* Inverted/Brand Background */
+    --color-btn-primary-text: var(--color-bg);      /* Inverted/Brand Text */
+    --color-btn-surface-bg: var(--color-bg);        /* Surface/White Background */
+    --color-btn-surface-text: var(--color-link);    /* Surface/Colored Text */
+    --color-btn-on-dark-bg: var(--brand-white);     /* Static White for Dark Backgrounds */
+    --color-btn-on-dark-text: var(--brand-violet);  /* Static Violet for Dark Backgrounds */
+
+    /* Button Colors - Active Component State (Default to Primary) */
+    --color-button-bg: var(--color-btn-primary-bg);
+    --color-button-text: var(--color-btn-primary-text);
 }
 
 /* Dark Mode Overrides */
@@ -126,6 +138,69 @@ html[data-theme='dark'] {
     --ifm-footer-color: var(--color-text);
     --ifm-footer-title-color: var(--color-text);
     --ifm-footer-link-color: var(--color-link);
+    --ifm-font-size-base: var(--font-size-body);
+    --ifm-line-height-base: var(--line-height-body);
+    --ifm-heading-font-family: var(--font-family-header);
+    --ifm-heading-line-height: var(--line-height-heading);
+    --ifm-h1-font-size: var(--font-size-h1);
+    --ifm-h2-font-size: var(--font-size-h2);
+    --ifm-h3-font-size: var(--font-size-h3);
+    --ifm-h4-font-size: var(--font-size-h4);
+}
+
+/*
+  Docusaurus Blog Overrides
+  These rules provide higher specificity to override Docusaurus's
+  internal component styles that don't use --ifm variables.
+*/
+
+/* Enforce body typography inside blog posts */
+.markdown > p, .markdown > ul, .markdown > ol {
+    font-size: var(--ifm-font-size-base);
+    line-height: var(--ifm-line-height-base);
+    font-weight: var(--font-weight-body);
+}
+
+/* Enforce heading typography inside blog posts */
+.markdown h1 {
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-h1);
+    line-height: var(--line-height-heading);
+}
+.markdown h2 {
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    line-height: var(--line-height-heading);
+}
+.markdown h3 {
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h3);
+    line-height: var(--line-height-heading);
+}
+.markdown h4 {
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-h4);
+    line-height: var(--line-height-heading);
+}
+
+/* Override hardcoded blog title font sizes */
+/* Single Post Page Title (h1) */
+article header h1[class*="title"] {
+    font-family: var(--font-family-header);
+    font-weight: var(--font-weight-h1);
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-heading);
+}
+/* Blog List Page Title (h2) */
+article a h2 {
+    font-family: var(--font-family-header);
+    font-weight: var(--font-weight-h2);
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-heading);
 }
 
 /* Global Resets */
@@ -160,17 +235,62 @@ html[data-theme='dark'] {
     border-radius: 4px;
 }
 
-/* Utilities */
-@media screen and (max-width: 700px) {
-    .section__padding { padding: 4rem; }
-    .section__margin { margin: 4rem; }
+/* Global Typography Reset */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-header);
+    line-height: var(--line-height-heading);
+    color: var(--color-text);
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 550px) {
-    .section__padding { padding: 4rem 2rem; }
-    .section__margin { margin: 4rem 2rem; }
+h1 { font-weight: var(--font-weight-h1); font-size: var(--font-size-h1); }
+h2 { font-weight: var(--font-weight-h2); font-size: var(--font-size-h2); }
+h3 { font-weight: var(--font-weight-h3); font-size: var(--font-size-h3); }
+h4 { font-weight: var(--font-weight-h4); font-size: var(--font-size-h4); }
+
+p {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-text);
+    margin-bottom: 1rem;
 }
 
+/* Typography Utilities */
+.text-lead {
+    font-family: var(--font-family-lead);
+    font-weight: var(--font-weight-lead);
+    font-size: var(--font-size-lead);
+    line-height: var(--line-height-lead);
+}
+
+.text-ui {
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
+}
+
+.text-display {
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    white-space: normal;
+}
+ 
+/* Layout Utilities */
+.section {
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+
+/* Card Utility */
+.card {
+    background-color: var(--color-surface);
+    border-radius: 10px;
+}
 /* Navbar Typography */
 .navbar__item,
 .navbar__link {
@@ -179,9 +299,9 @@ html[data-theme='dark'] {
 
 /* Header "Contact Us" Button Styling */
 .navbar__item.navbar__link[href*="contact"],
-.navbar__link--contact {
-    background-color: var(--color-bg);
-    color: var(--color-link) !important;
+.navbar__link--contact {    
+    background-color: var(--color-btn-on-dark-bg);
+    color: var(--color-btn-on-dark-text) !important;
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-weight: var(--font-weight-ui);
@@ -198,4 +318,36 @@ html[data-theme='dark'] {
 .navbar__logo img {
     filter: invert(100%);
     mix-blend-mode: screen;
+}
+
+/* Shared Button Styles (Pill Shape) */
+.button-pill {
+    border-radius: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    line-height: inherit;
+    transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+
+    /* Default to PRIMARY button style */
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+}
+
+.button-pill:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.button-pill:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
 }
