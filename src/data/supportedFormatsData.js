@@ -2,13 +2,13 @@ import {
     BsMicrosoft,
     BsFileEarmarkText,
     BsGlobe,
-    BsFileText,
     BsEnvelope,
     BsCardImage,
     BsApple,
     BsArchive,
     BsCodeSlash,
-    BsDatabase
+    BsDatabase,
+    BsFileEarmarkPdf
 } from "react-icons/bs";
 
 export const formatGroups = [
@@ -17,9 +17,9 @@ export const formatGroups = [
         icon: BsMicrosoft,
         formats: [
             "DOCX", "XLSX", "PPTX",
-            "DOC", "XLS", "XLSB", "PPT"
+            "DOC", "XLS", "XLSB", "PPT", "RTF"
         ],
-        description: "Office Open XML (OOXML) and legacy binary formats."
+        description: "Office Open XML, legacy binary formats, and RTF."
     },
     {
         groupName: "OpenOffice/LibreOffice",
@@ -34,10 +34,10 @@ export const formatGroups = [
         description: "Standard web page formats."
     },
     {
-        groupName: "Documents",
-        icon: BsFileText,
-        formats: ["PDF", "RTF"],
-        description: "Portable Document Format and Rich Text Format."
+        groupName: "Portable Document Format",
+        icon: BsFileEarmarkPdf,
+        formats: ["PDF"],
+        description: "With OCR of embedded images."
     },
     {
         groupName: "Email",

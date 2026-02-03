@@ -52,7 +52,7 @@
 }
 
 .docwire__format-group-formats {
-    color: var(--brand-orange);
+    color: var(--icon-color);
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 1em;
@@ -60,7 +60,7 @@
 }
 
 .docwire__format-group-description {
-    color: var(--color-subtext);
+    color: var(--color-text);
     margin-top: auto; /* Pushes description to the bottom */
     padding-top: 1em; /* space above description */
     margin-bottom: 0;
