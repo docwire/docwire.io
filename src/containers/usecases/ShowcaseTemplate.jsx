@@ -55,7 +55,7 @@ function ShowcaseTemplate(props) {
                         </Link>
                     </div>
                     <div className="docwire__showcase-template_content-right card">
-                        <div className="question"><h4>What is {showcase.companyName}</h4></div>
+                        <div className="question"><h4>What is {showcase.companyName}?</h4></div>
                         <div className="answer"><p>{showcase.whatIs}</p></div>
 
                         <div className="question"><h4>Why were Docwire approached?</h4></div>

@@ -86,6 +86,9 @@
     /* Button Colors - Active Component State (Default to Primary) */
     --color-button-bg: var(--color-btn-primary-bg);
     --color-button-text: var(--color-btn-primary-text);
+
+    /* Icon Colors */
+    --icon-color: var(--brand-orange);
 }
 
 /* Dark Mode Overrides */
@@ -189,7 +192,7 @@ html[data-theme='dark'] {
 
 /* Override hardcoded blog title font sizes */
 /* Single Post Page Title (h1) */
-article header h1[class*="title"] {
+article header h1 {
     font-family: var(--font-family-header);
     font-weight: var(--font-weight-h1);
     font-size: var(--font-size-h1);
@@ -344,6 +347,11 @@ p {
 .button-pill:hover {
     transform: scale(1.05);
     opacity: 0.9;
+}
+
+.button-pill:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
 }
 
 .button-pill:disabled {

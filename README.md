@@ -18,10 +18,10 @@ The homepage is made up of several sections. You can find the text for these sec
 
 *   **Hero (Top Section)**: `src/containers/header/home/HomeHeader.jsx`
 *   **"Have you ever wanted to..."**: `src/containers/components/home/HomeHaveYouEver.jsx`
-*   **"Unlock the Power"**: `src/containers/components/home/UnlockThePower.jsx`
+*   **"Unlock the Power" Cards**: The content for these cards is in `src/data/unlockThePowerData.js`.
 *   **Wings Section**: `src/containers/components/home/WingsSection.jsx`
-*   **Info/Formats**: `src/containers/components/home/InfoSection.jsx`
 *   **Call to Action (Bottom)**: `src/containers/CTA/CTA.jsx`
+*   **Supported Formats Grid**: The list of formats is in `src/data/supportedFormatsData.js`.
 
 **Tip:** Look for the white text inside the code. Be careful not to delete code symbols like `<p>`, `<h3>`, `</div>`, or `{`.
 

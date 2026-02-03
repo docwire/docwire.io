@@ -23,7 +23,6 @@
 
 .docwire__unlockthepower-content_infocard_section {
     justify-content: space-between;
-    align-items: flex-start;
     display: flex;
 }
 
@@ -41,23 +40,25 @@
     align-items: flex-start;
     padding: 20px;
     display: flex;
+    border-radius: 10px;
 }
 
 .lightning {
-    width: 2rem;
-    height: 2rem;
+    font-size: 2rem;
     display: block;
-    color: var(--brand-orange);
+    color: var(--icon-color);
+    margin-bottom: 15px;
 }
 
 .infocard_header {
     width: 90%;
-    margin-top: 0.3em;
+    margin-top: 0;
 }
 
 .infocard_paragraph {
     margin-bottom: 0;
-    margin-top: 0.4em;
+    margin-top: auto; /* Pushes paragraph to the bottom */
+    padding-top: 1em; /* Ensures space between header and text */
 }
 
 

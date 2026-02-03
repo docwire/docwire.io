@@ -8,7 +8,7 @@ function CTAcontact() {
                 <div className='docwire__cta-background_banner'>
                     <div className='docwire__cta-content'>
                         <h3>Give our demo a try</h3>
-                        <p className="text-lead">Have a go and experiment with our non-commerical license, without trial periods or gated
+                        <p className="text-lead">Have a go and experiment with our non-commercial license, without trial periods or gated
                             functions!</p>
                     </div>
                 </div>

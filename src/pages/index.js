@@ -10,8 +10,7 @@ import {
     HomeHaveYouEver,
     CTA,
     HomeHeader,
-    SupportedFormats,
-    InfoSection
+    SupportedFormats
 } from "../containers";
 
 export default function Home() {
@@ -23,12 +22,11 @@ export default function Home() {
       <main>
         {/* Nav is handled by Docusaurus Layout */}
         <HomeHeader/>
-        <SupportedFormats/>
         <HomeHaveYouEver/>
+        <SupportedFormats/>
         <UnlockThePower/>
         <WingsSection/>
         <CTA/>
-        <InfoSection/>
         {/* Footer is handled by Docusaurus Layout */}
       </main>
     </Layout>
