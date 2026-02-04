@@ -9,6 +9,7 @@
     padding: 3rem 5%;
     gap: 2rem;
     display: flex;
+    flex-direction: row;
 
     /* Contextual Override: Buttons inside this dark container should use surface colors */
     --color-button-bg: var(--color-btn-on-dark-bg);
