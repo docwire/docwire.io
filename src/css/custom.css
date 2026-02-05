@@ -43,6 +43,17 @@
     --color-link: var(--brand-violet);
     --color-link-hover: var(--color-subtext);
 
+    /* Header Colors */
+    --color-header-bg: var(--brand-violet);
+    --color-header-text: var(--brand-white);
+    --color-header-text-hover: var(--brand-gradient-end);
+    --color-header-btn-bg: var(--color-btn-on-dark-bg);
+    --color-header-btn-text: var(--color-btn-on-dark-text);
+
+    /* Menu Colors */
+    --color-menu-active-text: var(--brand-violet);
+    --color-menu-active-bg: var(--color-surface);
+
     /* Layout Defaults */
     --container-width: 80vw;
     --container-max-width: 1126px;
@@ -107,6 +118,10 @@ html[data-theme='dark'] {
     /* Link Colors */
     --color-link: var(--brand-white);
     --color-link-hover: var(--brand-violet);
+
+    /* Menu Colors */
+    --color-menu-active-text: var(--brand-orange);
+    --color-menu-active-bg: rgba(255, 255, 255, 0.05);
 }
 
 /* Derived colors for modern browsers */
@@ -134,9 +149,9 @@ html[data-theme='dark'] {
     --ifm-text-color: var(--color-text);
     --ifm-link-color: var(--color-link);
     --ifm-link-hover-color: var(--color-link-hover);
-    --ifm-navbar-background-color: var(--brand-violet);
-    --ifm-navbar-link-color: var(--brand-white);
-    --ifm-navbar-link-hover-color: var(--brand-gradient-end);
+    --ifm-navbar-background-color: var(--color-header-bg);
+    --ifm-navbar-link-color: var(--color-header-text);
+    --ifm-navbar-link-hover-color: var(--color-header-text-hover);
     --ifm-footer-background-color: var(--color-footer);
     --ifm-footer-color: var(--color-text);
     --ifm-footer-title-color: var(--color-text);
@@ -149,6 +164,11 @@ html[data-theme='dark'] {
     --ifm-h2-font-size: var(--font-size-h2);
     --ifm-h3-font-size: var(--font-size-h3);
     --ifm-h4-font-size: var(--font-size-h4);
+
+    /* Menu Colors (Sidebar, etc.) */
+    --ifm-menu-color: var(--color-text);
+    --ifm-menu-color-active: var(--color-menu-active-text);
+    --ifm-menu-color-background-active: var(--color-menu-active-bg);
 }
 
 /*
@@ -300,23 +320,6 @@ p {
     font-family: var(--font-family-ui);
 }
 
-/* Header "Contact Us" Button Styling */
-.navbar__item.navbar__link[href*="contact"],
-.navbar__link--contact {    
-    background-color: var(--color-btn-on-dark-bg);
-    color: var(--color-btn-on-dark-text) !important;
-    padding: 0.5rem 1.25rem;
-    border-radius: 2rem;
-    font-weight: var(--font-weight-ui);
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.navbar__item.navbar__link[href*="contact"]:hover,
-.navbar__link--contact:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
 /* Logo Adaptation for Violet Header */
 .navbar__logo img {
     filter: invert(100%);
@@ -338,8 +341,6 @@ p {
     border: 0;
     line-height: inherit;
     transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-
-    /* Default to PRIMARY button style */
     background-color: var(--color-button-bg);
     color: var(--color-button-text);
 }
@@ -347,6 +348,17 @@ p {
 .button-pill:hover {
     transform: scale(1.05);
     opacity: 0.9;
+    color: var(--color-button-text);
+}
+
+/* Specific colors for the navbar "Contact Us" button */
+.nav-cta {
+    background-color: var(--color-header-btn-bg);
+    color: var(--color-header-btn-text);
+}
+
+.nav-cta:hover {
+    color: var(--color-header-btn-text);
 }
 
 .button-pill:focus-visible {

@@ -40,7 +40,7 @@ function ShowcaseTemplate(props) {
                             <div className="text-ui">Website</div>
                             <HiExternalLink className="icon"/>
                         </a>
-                        <Link to="/contact-us" className="cta button-pill">Get licence</Link>
+                        <Link to="/contact-us" className="button-pill">Get licence</Link>
                     </div>
                 </div>
                 <div className="docwire__showcase-template_content section">

@@ -88,7 +88,7 @@ const config = {
             position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/contact-us', label: 'Contact Us', position: 'right'},
+          {to: '/contact-us', label: 'Contact Us', position: 'right', className: 'button-pill nav-cta'},
           {
             href: 'https://github.com/docwire/docwire',
             label: 'GitHub',
