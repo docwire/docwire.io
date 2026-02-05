@@ -51,8 +51,8 @@
     --color-header-btn-text: var(--color-btn-on-dark-text);
 
     /* Menu Colors */
+    --color-menu-active-bg: var(--brand-white);
     --color-menu-active-text: var(--brand-violet);
-    --color-menu-active-bg: var(--color-surface);
 
     /* Layout Defaults */
     --container-width: 80vw;
@@ -118,10 +118,6 @@ html[data-theme='dark'] {
     /* Link Colors */
     --color-link: var(--brand-white);
     --color-link-hover: var(--brand-violet);
-
-    /* Menu Colors */
-    --color-menu-active-text: var(--brand-orange);
-    --color-menu-active-bg: rgba(255, 255, 255, 0.05);
 }
 
 /* Derived colors for modern browsers */
@@ -165,8 +161,8 @@ html[data-theme='dark'] {
     --ifm-h3-font-size: var(--font-size-h3);
     --ifm-h4-font-size: var(--font-size-h4);
 
-    /* Menu Colors (Sidebar, etc.) */
-    --ifm-menu-color: var(--color-text);
+    /* Menu Colors */
+    --ifm-menu-color: var(--color-header-text);
     --ifm-menu-color-active: var(--color-menu-active-text);
     --ifm-menu-color-background-active: var(--color-menu-active-bg);
 }
