@@ -21,9 +21,9 @@ function Form() {
     function handleOnSubmit(e) {
         e.preventDefault()
         setIsFormVisible(false)
-        emailjs.sendForm('service_kae7du7',
-            'template_c6xey6a',
-            e.target, '3KoDxLxb5ljsWpftC').then(res => {
+        emailjs.sendForm('service_vxi20hi',
+            'template_m1jh747',
+            e.target, '-4RMv_gPIISLilkg8').then(res => {
             console.log(res)
             setState("success")
         }).catch(err => {
