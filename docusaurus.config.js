@@ -13,17 +13,24 @@ const [organizationName, projectName] = parts.length === 2
 
 const currentBranch = process.env.CURRENT_BRANCH || 'master';
 
+// Production settings for the main repository
+const isProd = githubRepository === 'docwire/docwire.io';
+const prodUrl = 'https://docwire.io';
+const prodBaseUrl = '/';
+
+// Fallback settings for forks and local development
+const devUrl = `https://${organizationName}.github.io`;
+const devBaseUrl = `/${projectName}/`;
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Docwire',
   tagline: 'Award-winning modern data processing in C++20',
   favicon: 'img/FaviconLogo.png',
 
-  // Set the production url of your site here
-  url: `https://${organizationName}.github.io`,
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: `/${projectName}/`,
+  // Set the URL and base URL depending on the environment
+  url: isProd ? prodUrl : devUrl,
+  baseUrl: isProd ? prodBaseUrl : devBaseUrl,
 
   // GitHub pages deployment config.
   organizationName, // Your GitHub username

@@ -31,7 +31,12 @@ jobs:
         run: npm install
 
       - name: Build website
-        run: npm run build:debug
+        run: |
+          if [[ "$CURRENT_BRANCH" == *"--debug" ]]; then
+            npm run build:debug
+          else
+            npm run build
+          fi
         env:
           CURRENT_BRANCH: ${{ github.ref_name }}
 
