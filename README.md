@@ -54,9 +54,11 @@ To add a new post:
     ```markdown
     ![Description](/img/your-image-name.jpg)
     ```
-*   **YouTube**: To make the video responsive (adaptable to mobile screens), use the snippet below. Replace `VIDEO_ID` with the ID from your YouTube link.
-    ```jsx
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" style={{width: '100%', aspectRatio: '16/9'}} allowFullScreen frameBorder="0"></iframe>
+*   **YouTube**:
+    Simply add a standard image link pointing to the YouTube video. The website will automatically convert this into a video player.
+    
+    ```markdown
+    [![Video title](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://youtu.be/VIDEO_ID)
     ```
 
 ### 3. Adding Showcases

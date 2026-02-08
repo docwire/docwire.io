@@ -58,9 +58,13 @@ const config = {
           showReadingTime: true,
           editUrl:
             `https://github.com/${organizationName}/${projectName}/tree/${currentBranch}/`,
+          remarkPlugins: [require('./src/plugins/remark-youtube')],
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        pages: {
+          remarkPlugins: [require('./src/plugins/remark-youtube')],
         },
       }),
     ],
