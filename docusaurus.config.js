@@ -58,13 +58,19 @@ const config = {
           showReadingTime: true,
           editUrl:
             `https://github.com/${organizationName}/${projectName}/tree/${currentBranch}/`,
-          remarkPlugins: [require('./src/plugins/remark-youtube')],
+          remarkPlugins: [
+            require('./src/plugins/remark-youtube'),
+            require('./src/plugins/remark-static-images'),
+          ],
         },
         theme: {
           customCss: './src/css/custom.css',
         },
         pages: {
-          remarkPlugins: [require('./src/plugins/remark-youtube')],
+          remarkPlugins: [
+            require('./src/plugins/remark-youtube'),
+            require('./src/plugins/remark-static-images'),
+          ],
         },
       }),
     ],

@@ -29,9 +29,10 @@ The homepage is made up of several sections. You can find the text for these sec
 Blog posts are located in the `blog/` folder.
 
 To add a new post:
-1.  Create a new file in the `blog/` folder.
-2.  Name it starting with the date, e.g., `2024-01-01-my-new-post.md`.
-3.  Paste the following template at the top of the file:
+*   **Text-only**: Create a new file in `blog/` (e.g., `blog/2024-01-01-my-post.md`).
+*   **With Images**: Create a new folder (e.g., `blog/2024-01-01-my-post`) and add an `index.md` file inside.
+
+Paste the following template at the top of your file:
 
     ```markdown
     ---
@@ -49,11 +50,15 @@ To add a new post:
 
 #### Adding Images & Videos
 *   **Images**:
-    1.  Upload the image to the `static/img` folder.
-    2.  Use standard Markdown syntax to reference it:
-    ```markdown
-    ![Description](/img/your-image-name.jpg)
-    ```
+    *   **Option 1 (Post-Specific)**: Place the image in the same folder as your Markdown file.
+        ```markdown
+        ![Description](./your-image-name.jpg)
+        ```
+    *   **Option 2 (Shared/Reusable)**: If an image is used on multiple pages, upload it to `static/img/`.
+        Reference it using the full path so it works in GitHub:
+        ```markdown
+        ![Description](/static/img/your-image.jpg)
+        ```
 *   **YouTube**:
     Simply add a standard image link pointing to the YouTube video. The website will automatically convert this into a video player.
     
@@ -69,7 +74,14 @@ Showcases are managed in a data file.
 3.  Update the text fields (`companyName`, `whatIs`, etc.).
 4.  **Images**: Upload new images to `src/assets` and reference the filename in the `image` field.
 
-### 4. Contact Form
+### 4. Standard Pages
+Standalone pages (like "About Us" or "Privacy Policy") are located in `src/pages/`.
+
+*   **Simple Page**: Create a file like `src/pages/new-page.md`. It will be available at `/new-page`.
+*   **Page with Images**: Create a folder like `src/pages/new-page/` and add an `index.md` file inside.
+    *   You can then put images in that folder and link them using `!Alt`.
+
+### 5. Contact Form
 The contact form uses **EmailJS**.
 
 If you need to change the email configuration (Service ID, Template ID, or Public Key):
