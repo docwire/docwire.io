@@ -31,6 +31,7 @@ const config = {
   // Set the URL and base URL depending on the environment
   url: isProd ? prodUrl : devUrl,
   baseUrl: isProd ? prodBaseUrl : devBaseUrl,
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   organizationName, // Your GitHub username
